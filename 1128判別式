@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cout << "方程式ax^2+bx+c=0 輸入a=";
+	cin >> a;
+	cout << "b=";
+	cin >> b;
+	cout << "c=";
+	cin >> c;
+
+	if (pow(b, 2) - 4 * a*c == 0) {
+		cout << "解為" << -b / (2 * a);
+	}
+	else if (pow(b, 2) - 4 * a*c < 0) {
+		cout << "沒有實數解";
+	}
+	else {
+		cout << "有兩解，其中一個是" << -b + (b, 2) - 4 * a*c / 2 * a << "另一個是" << -b + (b, 2) - +4 * a*c / 2 * a;
+	}
+}
