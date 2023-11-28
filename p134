@@ -1,0 +1,19 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int ad, ch, to;
+	cout << "幾個大人:";
+	cin >> ad;
+	cout << "幾個小孩:";
+	cin >> ch;
+	to = ad * 250 + ch * 150;
+	if (to >= 1000) {
+		to = to * 0.9;
+		cout << "總消費金額:" << to;
+	}
+	else {
+		cout << to;
+	}
+}
